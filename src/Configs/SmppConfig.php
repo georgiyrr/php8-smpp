@@ -11,6 +11,7 @@ use Smpp\Exceptions\SmppException;
 use Smpp\Validators\AddressRangeValidator;
 use Smpp\Validators\NumberingPlanIndicatorValidator;
 use Smpp\Validators\TypeOfNumberValidator;
+use Smpp\Smpp;
 
 class SmppConfig
 {
