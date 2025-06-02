@@ -3,7 +3,7 @@
 declare(strict_types=1);
 
 
-namespace Smpp;
+namespace Smpp\Configs;
 
 
 use Smpp\Contracts\ValidatorInterface;
