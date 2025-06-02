@@ -220,7 +220,7 @@ class Client implements SmppClientInterface
      * @param Pdu $pdu
      * @throws Exception
      */
-    protected function sendPDU(Pdu $pdu): void
+    public function sendPDU(Pdu $pdu): void
     {
         $binaryPdu = $this->builder->packPdu($pdu);
         $this->transport->write($binaryPdu->getData(), $binaryPdu->getLength());
@@ -285,7 +285,7 @@ class Client implements SmppClientInterface
      * @return false|Pdu
      * @throws SmppException
      */
-    protected function readPDU(): Pdu|false
+    public function readPDU(): Pdu|false
     {
         // Read PDU header
         $bufHeaders = $this->transport->read(PDUHeader::PDU_HEADER_LENGTH);
@@ -331,7 +331,7 @@ class Client implements SmppClientInterface
      *
      * @throws SmppException|Exception
      */
-    protected function reconnect(): void
+    public function reconnect(): void
     {
         $this->close();
         sleep(1);
