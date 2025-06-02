@@ -26,7 +26,7 @@ class SmppConfig
      *
      * @var string $systemType
      */
-    private string $systemType = "WWW";
+    private string $systemType = "";
 
     /**
      * @var int
