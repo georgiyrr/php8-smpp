@@ -607,7 +607,7 @@ class Client implements SmppClientInterface
      *
      * @throws Exception
      */
-    protected function parseSMS(Pdu $pdu): DeliveryReceipt|Sms
+    public function parseSMS(Pdu $pdu): DeliveryReceipt|Sms
     {
         // Check command id
         if ($pdu->getId() != Command::DELIVER_SM) {
