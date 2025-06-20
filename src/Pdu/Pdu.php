@@ -40,7 +40,7 @@ class Pdu implements PduInterface
     /**
      * @return int
      */
-    public function getStatus(): int|string;
+    public function getStatus(): int|string
     {
         return $this->status;
     }
@@ -48,7 +48,7 @@ class Pdu implements PduInterface
     /**
      * @return int
      */
-    public function getSequence(): int|string;
+    public function getSequence(): int|string
     {
         return $this->sequence;
     }
