@@ -191,7 +191,7 @@ class Client implements SmppClientInterface
             throw new SocketTransportException('Socket is closed');
             //return false;
         }
-        $pdu = new Pdu((string)$id, '0', (string)$this->sequenceNumber, $pduBody);
+        $pdu = new Pdu((string)$id, 0, (string)$this->sequenceNumber, $pduBody);
         $this->sendPDU($pdu);
         $response = $this->readPduResponse($this->sequenceNumber, $pdu->getId());
 
