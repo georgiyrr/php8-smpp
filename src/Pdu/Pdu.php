@@ -16,8 +16,8 @@ class Pdu implements PduInterface
      * Create new generic PDU object
      *
      * @param int|string $id
-     * @param int|string; $status
-     * @param int|string; $sequence
+     * @param int|string $status
+     * @param int|string $sequence
      * @param string|null $body
      */
     public function __construct(
