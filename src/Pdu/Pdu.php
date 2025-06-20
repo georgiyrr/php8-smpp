@@ -16,14 +16,14 @@ class Pdu implements PduInterface
      * Create new generic PDU object
      *
      * @param int|string $id
-     * @param integer $status
-     * @param integer $sequence
+     * @param int|string; $status
+     * @param int|string; $sequence
      * @param string|null $body
      */
     public function __construct(
         protected int|string $id,
-        protected int $status,
-        protected int $sequence,
+        protected int|string; $status,
+        protected int|string; $sequence,
         protected ?string $body
     )
     {
@@ -40,7 +40,7 @@ class Pdu implements PduInterface
     /**
      * @return int
      */
-    public function getStatus(): int
+    public function getStatus(): int|string;
     {
         return $this->status;
     }
@@ -48,7 +48,7 @@ class Pdu implements PduInterface
     /**
      * @return int
      */
-    public function getSequence(): int
+    public function getSequence(): int|string;
     {
         return $this->sequence;
     }
