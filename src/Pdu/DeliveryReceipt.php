@@ -14,7 +14,7 @@ use Smpp\Exceptions\SmppInvalidArgumentException;
  */
 class DeliveryReceipt extends Sms
 {
-    public string    $id;
+    public int|string    $id;
     public int    $sub;
     public int    $dlvrd;
     public int    $submitDate;
