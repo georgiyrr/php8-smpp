@@ -22,8 +22,8 @@ class Pdu implements PduInterface
      */
     public function __construct(
         protected int|string $id,
-        protected int|string; $status,
-        protected int|string; $sequence,
+        protected int|string $status,
+        protected int|string $sequence,
         protected ?string $body
     )
     {
