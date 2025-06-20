@@ -9,7 +9,7 @@ namespace Smpp\Contracts\Pdu;
 interface PduInterface
 {
     public function getId(): int|string;
-    public function getSequence(): int;
-    public function getStatus(): int;
-    public function getBody(): string;
+    public function getSequence(): int|string;
+    public function getStatus(): int|string;
+    public function getBody(): int|string;
 }
