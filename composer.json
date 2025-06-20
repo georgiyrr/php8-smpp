@@ -1,5 +1,5 @@
 {
-    "name": "php8-smpp/php8-smpp",
+    "name": "georgiyrr/php8-smpp",
     "description": "PHP8 SMPP client lib, based on fork of alexandr-mironov/php-smpp which is fork of onlinecity/php-smpp",
     "keywords": [
         "smpp",
@@ -12,8 +12,8 @@
     "license": "LGPL-2.0-or-later",
     "authors": [
         {
-            "name": "Alexandr Mironov",
-            "email": "alex@htrex.com"
+            "name": "Geo Rom",
+            "email": "gashysh@gmail.com"
         }
     ],
     "require": {
